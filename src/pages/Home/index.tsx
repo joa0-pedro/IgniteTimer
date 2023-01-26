@@ -14,7 +14,7 @@ import { useContext } from 'react'
 import { CyclesContext } from '../../contexts/CycleContext'
 
 const newCicleFormValidationSchema = zod.object({
-  // task: zod.string().min(3, 'Informe a tarefa'),
+  task: zod.string().min(3, 'Informe a tarefa'),
   minutesAmount: zod
     .number()
     .min(5, 'O ciclo precisa ser maior do que 5 minutos')
